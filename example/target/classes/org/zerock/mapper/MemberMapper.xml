@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="org.zerock.mapper.MemberMapper">
+	
+	
+	
+	<insert id="insert" >
+		insert into Member (mid, mregion, mage)
+		 values (#{mid}, #{mregion}, #{mage}) 
+	</insert>
+	
+	
+	<!-- <insert id="insertSelectKey">
+	 	<selectKey keyProperty="dno" order="BEFORE" resultType="long">
+	 		select seq_dog.nextval from dual 
+	 	</selectKey>
+	 		 insert into dog (name, weight, kind, sex, age, fileName, simple, feature, health, dno)
+	 		values (#{name}, #{weight}, #{kind}, #{sex}, #{age},
+	 		#{fileName}, #{simple}, #{feature}, #{health}, #{dno})
+ 	</insert>
+ 	
+ 	<select id="getList" resultType="org.zerock.domain.DogDTO">
+ 		<![CDATA[
+ 			select *from dog where dno>0
+ 		]]>
+	 </select>
+	 
+	 
+	 <select id="read" resultType="org.zerock.domain.DogDTO">
+	 	select *from dog where dno =#{dno}
+	 </select>
+	 
+	 
+	 <delete id="delete">
+	 	delete from dog where dno =#{dno}
+	 </delete>
+	 
+	 
+	 <update id="update">
+	 	update dog set name=#{name}, weight=#{weight}, kind=#{kind}, sex=#{sex},
+	 	age=#{age},  fileName=#{fileName}, simple=#{simple}, feature=#{feature},
+		health=#{health}, regdate=sysdate where dno=#{dno}
+	 </update> -->
+	 	
+</mapper>
